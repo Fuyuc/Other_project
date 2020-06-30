@@ -1,0 +1,44 @@
+<!--pages/common/pages/selectData/selectData.wxml-->
+
+<scroll-view scroll-y="true">
+
+    <view class="form-item">
+      <view class="form-item-key">姓</view>
+      <view class="form-item-value">{{personInfo.lastname}}</view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">名</view>
+      <view class="form-item-value">{{personInfo.firstname}}</view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">性别</view>
+      <view class="form-item-value">{{personInfo.sex}}</view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">排行</view>
+      <view class="form-item-value">{{personInfo.rank}}</view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">标记</view>
+      <view class="form-item-value">{{personInfo.tab}}</view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">生日</view>
+      <view class="form-item-value">{{personInfo.birthday}}</view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">出生地</view>
+      <view class="form-item-value">{{personInfo.birthplace}}</view>
+    </view>
+
+    <view>
+      <button bindtap='updateData' type="default">修改</button>
+    </view>
+
+</scroll-view>

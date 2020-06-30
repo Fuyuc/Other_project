@@ -1,0 +1,23 @@
+<!--page/mine/group/group.wxml-->
+<view class='container' style='background-color:white;'>
+  <view class="border" style='margin-left:30rpx;'>
+    <view class="flex setion">
+      <!--头像-->
+      <view class="setion-left">
+        <image src="/images/mine/title_image.jpg"></image>
+      </view>
+      <!--姓名/电话-->
+      <view class="setion-middle">
+        <view class="flex middle-up">
+          <view class="name" style='font-size: 35rpx; color: #353535;'>{{name}}</view>
+          <view class="relation" style='font-size: 30rpx; color: #353535;'>
+            <text>({{relation}})</text>
+          </view>
+        </view>
+        <view class="flex middle-down">
+          <view class="tel" style='font-size: 25rpx;'>{{tel}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

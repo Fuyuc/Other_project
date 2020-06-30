@@ -1,0 +1,65 @@
+/* page/mine/introduce/mod_deed/mod_deed.wxss */
+
+.container {
+  height: 100%;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  flex: 1;
+  height: 60rpx;
+  background-color: #f2f2f2;
+  padding-left: 20rpx;
+  font-size: 35rpx;
+  align-items: flex-end;
+}
+
+.section {
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  font-size: 36rpx;
+  font-weight: 300;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.select_time_button {
+  height: 40rpx;
+  width: 40rpx;
+  padding-right: 20rpx;
+}
+
+.picker {
+  font-size: 36rpx;
+  font-weight: 300;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.map_button {
+  background-color: white;
+  font-size: 30rpx;
+  color: #3a5fcd;
+}
+
+.map_button::after {
+  border: none;
+}
+
+.border {
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 20rpx;
+  border: 2rpx solid #f0f0f0;
+  border-radius: 10rpx;
+}

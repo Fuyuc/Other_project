@@ -1,0 +1,6 @@
+<!--index/text_more/text_more.wxml-->
+  <block wx:for="{{person_list}}" wx:key='unique' wx:for-index="index">
+    <view class='block'>
+      <view class="text_putting" style='border-bottom: 2rpx solid #e4e4e4;'>{{person_list[index]}}</view>
+    </view>
+  </block>

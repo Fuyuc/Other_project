@@ -1,0 +1,43 @@
+/* page/mine/group/group.wxss */
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.setion {
+  background-color: white;
+  padding: 20rpx 20rpx 20rpx 0rpx;
+  color: #787878;
+  border-top: 0.8rpx solid #f2f2f2;
+  border-bottom: 0.8rpx solid #f2f2f2;
+  align-items: center;
+}
+
+.setion image {
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.setion-middle {
+  flex: 1;
+  margin-left: 40rpx;
+  padding-top: 4rpx;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.middle-up {
+  align-items: flex-end;
+  margin-bottom: 10rpx;
+}
+
+.middle-down {
+  align-items: flex-end;
+}

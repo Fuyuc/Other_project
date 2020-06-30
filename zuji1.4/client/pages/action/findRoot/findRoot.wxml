@@ -1,0 +1,86 @@
+<view class="page">
+  <import src='../../template/template.wxml'/>
+  <template is='search' data='{{region,customItem,inputVal,inputShowed}}'/>
+   
+  <view class='{{Style}}'>
+
+   <view wx:for='{{villages}}' wx:key="*this" class='villageStyle'>
+      <!-- <navigator url='result/result?namevillage={{item}}'> -->
+      <view bindtap='toResult' data-namevillage='{{item}}'>
+        <view class='Name'>{{item.Name}}</view>
+        <view class='Summary'>{{item.Summary}}</view>
+      </view>
+      <!-- </navigator> -->
+      
+   </view> 
+
+     
+  </view> 
+
+    
+</view>
+
+
+
+<!-- <view class='top'>
+        Left
+        <view class='list-Photo' >{{xing}}</view>
+        <Right
+        <view class='list-Info'>
+          <view class='list-infoTop'>
+            <view class='list-topName'>{{name}}所属分支</view>
+          </view>
+
+          <view class='list-tree' bindtap='changeToFamily'> 所属家族</view>
+              
+        </view>
+
+      </view>
+
+     <view class='doctor-bgcolor-white'>
+      <view class='doctor-third'>
+        <view class='doctor-tips'>家族简介</view>
+        <view wx:for='{{familyInfo}}' wx:key="*this" class='doctor-info'>{{item.info}}</view>
+      </view>
+    </view>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view id='body'>
+  <view class='searchBox-body'>
+     
+    <view class='searchBox-search'>  
+      <input placeholder-class="{{status==0 ? 'searchBox-placeholder':'searchBox-placeholder-active'}}" placeholder='{{searchMsg}}' bindfocus="focus"  bindblur='blur'></input>  
+      <image src='{{SearchSrc}}' class="{{status==0 ? 'searchBox-search-img':'searchBox-search-img-nomal'}}"></image>  
+    </view> 
+  </view>
+  
+  <view class='main'wx:for="{{department}}" wx:key="{{department}}" >
+    <view class='title'>{{item.title}}</view>
+    <view class='list'>
+      <view wx:for="{{item.departmentList}}" wx:key="{{item.departmentList}}" wx:for-item="departmentList">
+        <navigator url='{{departmentList.url}}'><view  class='method'>{{departmentList.name}}</view></navigator>
+      </view>
+    </view>
+  </view>
+</view> -->

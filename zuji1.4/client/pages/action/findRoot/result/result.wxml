@@ -1,0 +1,31 @@
+<view class="page">
+  <!-- <import src='../../../template/template.wxml'/>
+  <template is='search' data='{{region,customItem,inputVal,inputShowed}}'/> -->
+   
+  <view >
+      <view class='top'>
+        <!--Left-->
+        <view class='list-Photo' >{{xing}}</view>
+        <!--Right-->
+        <view class='list-Info'>
+          <view class='list-infoTop'>
+            <view class='list-topName'>{{name}}</view><!--名字-->
+          </view>
+
+          <view class='list-tree' bindtap='changeToFamily'> 所属家族</view>
+              
+        </view>
+
+      </view>
+
+     <view class='doctor-bgcolor-white'>
+      <view class='doctor-third'>
+        <view class='doctor-tips'>家族简介</view>
+        <view class='doctor-info'>{{summmary}}</view>
+      </view>
+    </view> 
+     
+  </view> 
+
+    
+</view>

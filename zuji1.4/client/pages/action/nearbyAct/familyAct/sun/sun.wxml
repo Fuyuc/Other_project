@@ -1,0 +1,15 @@
+<view class="Container">
+
+  <view class='title'>{{title}}</view>
+
+  <view class='time'>{{time}}</view>
+  
+  <image class='img' src='{{image}}'>251515562</image> 
+
+  <view class="container">
+    <view wx:for="{{actInfo}}" wx:key="*this" class='textFont'>
+      {{item.info}}
+    </view>
+  </view>
+  
+</view>

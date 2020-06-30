@@ -1,0 +1,18 @@
+/* index/text_more1/text_more1.wxss */
+
+.block {
+  padding-left: 30rpx;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.text_putting {
+  line-height: 70rpx;
+  color: #696969;
+  font-size: 25.5rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  background-color: white;  
+}

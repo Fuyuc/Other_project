@@ -1,0 +1,26 @@
+wz.content{
+  height: 70%;
+}
+.bottom{
+  height: 30%; 
+  padding-top:28rpx;
+  padding-left: 25rpx;
+  padding-right: 20rpx;
+}
+.bottom-one{  
+  color:#d06568;
+  font-size: 32rpx;  
+}
+.bottom-two{ 
+  color:#B4B4B4;
+  font-size: 30rpx; 
+}
+.address{ 
+  display: flex;
+  flex-direction: row; 
+  padding-top: 37rpx;
+  padding-bottom: 17rpx;
+  padding-left: 25rpx;
+  font-size: 41rpx;
+  border-bottom: 1px solid #FBFBFB;
+}

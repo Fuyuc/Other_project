@@ -1,0 +1,79 @@
+.head{
+  background-color: #676E76;
+  text-align: center;
+  width: 100%;
+  height: 25vh;
+}
+.none{
+  width: 100%;
+  height: 2vh;
+}
+.xing{
+  margin-left: 37vw;
+  background-color: #fff;
+  color: #000;
+  font-size: 72rpx;
+  line-height: 200rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.address{
+  padding-top: 1vh;
+  color: #fff;
+}
+.addressPic{
+  float: right;
+  width: 6vw;
+  height: 3vh;
+}
+.addressInfo{
+  width: 65vw;
+  float: right;
+  text-align: left;
+}
+.title{
+  margin-top: 1vh;
+  width: 100%;
+  height: 5vh;
+  background-color: #FFF;
+  border-bottom: 1px gainsboro solid;
+}
+.titleName{
+  margin-left: 5vw;
+  color: #717171;
+  font-size: 26rpx;
+  line-height: 5vh;
+}
+
+.introduce{
+  width: 100%;
+  background-color: #fff;
+  padding: 12rpx 0rpx;
+  font-size: 24rpx;
+  line-height: 48rpx;
+  text-indent: 48rpx;
+}
+.introduceInfo{
+  width: 90vw;
+  margin: 0 3vw;
+}
+.familyAct{
+  width: 100%;
+  background-color: #fff;
+  height: 36vh;
+}
+.actStyle{
+  padding: 3vh 10vw;
+}
+.actPic{
+  float: left;
+  width: 4vw;
+  height: 3vh;
+}
+.actInfo{
+  color: grey;
+  margin-left: 2vw;
+  float: left;
+  font-size: 28rpx;
+}

@@ -1,0 +1,31 @@
+/* page/mine/diary/diary.wxss */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: white;  
+}  
+
+.flex {
+  display: flex;
+}
+
+.count_person {
+  justify-content: center;
+  font-size: 25rpx;
+  color: red;
+  padding-bottom: 15rpx;
+}
+
+.operation {
+  flex: 1;
+  padding-left: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 27rpx;
+}
+
+.local_time {
+  position: fixed;
+  right: 20rpx;
+  font-size: 27rpx;
+  color: #8B8386;
+}

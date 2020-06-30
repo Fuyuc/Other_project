@@ -1,0 +1,4 @@
+<!--page/mine/print/print.wxml-->
+<view>
+  <image mode="widthFix" style='width:730rpx;' src="/images/mine/print_body.jpg"></image>
+</view>

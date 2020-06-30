@@ -1,0 +1,106 @@
+<!-- <view class='showPic'> <image class='pic' src='{{src}}' bindtap='preview_img'/> </view>
+
+<button class='btn' bindtap='chooseImage'>上传照片</button> -->
+
+
+<view class="container">
+
+  <image src="/images/faceFind/title.jpg" style='width:100%; height:30vh;' />
+
+  <view class='flex tips'>
+    <view class='tips-txt'>图文寻亲</view>
+    <view class='flex count_page'>{{count_page}}</view>
+    <view style='font-size:30rpx;padding-right: 20rpx;'>/2</view>
+  </view>
+
+  <swiper class="swiper" style='background-color:white; height:50vh;' current='1' bindchange='onSlideChangeEnd'>
+    <block wx:for="{{movies}}" wx:key='unique' wx:for-index="index">
+      <swiper-item>
+        <image src="{{movies[index][0].url}}" class="slide-image" mode="aspectFill" />
+        <image src="{{movies[index][1].url}}" class="slide-image" mode="aspectFill" />
+        <image src="{{movies[index][2].url}}" class="slide-image" mode="aspectFill" />
+        <view class='flex name_all'>
+          <view class="flex name1">{{movies[index][0].name1}}</view>
+          <view class="flex name1" style='padding-left:60rpx;'>{{movies[index][1].name1}}</view>
+          <view class="flex name1" style='padding-left:60rpx;'>{{movies[index][2].name1}}</view>
+        </view>
+
+        <image src="{{movies[index][3].url}}" class="slide-image" mode="aspectFill" />
+        <image src="{{movies[index][4].url}}" class="slide-image" mode="aspectFill" />
+        <image src="{{movies[index][5].url}}" class="slide-image" mode="aspectFill" />
+        <view class='flex name_all'>
+          <view class="flex name1">{{movies[index][3].name1}}</view>
+          <view class="flex name1" style='padding-left:60rpx;'>{{movies[index][4].name1}}</view>
+          <view class="flex name1" style='padding-left:60rpx;'>{{movies[index][5].name1}}</view>
+        </view>
+
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <navigator url="image_more/image_more" hover-class='navigator-hover'>
+    <view class='flex more'>点击查看更多</view>
+  </navigator>
+
+</view>
+
+<view class='tips'>
+  <view class='tips-txt'>文字寻亲</view>
+</view>
+
+<view class="flex tar_body">
+  <view class="{{selected?'red':'default'}}" bindtap="selected">家寻亲人</view>
+  <view class="{{selected1?'red':'default'}}" bindtap="selected1">亲人寻家</view>
+</view>
+
+<view class="{{selected?'show':'hidden'}}">
+  <block wx:for="{{text1}}" wx:key='unique' wx:for-index="index">
+    <view class='block'>
+      <view class="text_putting" style='border-bottom:{{index==text1.length-1 ? border_none:border}};'>{{text1[index]}}</view>
+    </view>
+  </block>
+
+  <navigator url="text_more/text_more" hover-class='navigator-hover'>
+    <view class='flex more'>点击查看更多</view>
+  </navigator>
+
+</view>
+
+<view class="{{selected1?'show':'hidden'}}">
+  <block wx:for="{{text2}}" wx:key='unique' wx:for-index="index">
+    <view class='flex block'>
+      <view class="text_putting" style='border-bottom:{{index==text2.length-1 ? border_none:border}};'>{{text2[index]}}</view>
+    </view>
+  </block>
+
+  <navigator url="text_more1/text_more1" hover-class='navigator-hover'>
+    <view class='flex more'>点击查看更多</view>
+  </navigator>
+
+</view>
+
+<view class='tips'>
+  <view class='tips-txt'>人脸识别</view>
+</view>
+
+<view class="flex image_box" style='background-color:white;'>
+  <view>
+    <view style='font-size: 26rpx;'>识别人脸</view>
+    <image src='{{src}}' style='width:40vw; height:29.5vh; padding-top: 10rpx;' bindtap='preview_img' />
+    <button class="upload_button" bindtap='chooseImage'>上传</button>
+  </view>
+
+  <view style='padding-left:29rpx;'>
+    <view style='font-size: 26rpx;'>查找结果</view>
+    <view>
+      <image src="/images/faceFind/title_image.jpg" class="image" />
+      <image src="/images/faceFind/title_image.jpg" class="image" />
+    </view>
+
+    <view>
+      <image src="/images/faceFind/title_image.jpg" class="image" />
+      <image src="/images/faceFind/title_image.jpg" class="image" />
+    </view>
+  </view>
+
+</view>

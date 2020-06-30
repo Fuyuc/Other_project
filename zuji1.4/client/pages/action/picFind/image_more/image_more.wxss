@@ -1,0 +1,58 @@
+/* index/image_more/image_more.wxss */
+page {
+  background: white;
+}
+
+navigator {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.setion {
+  padding: 20rpx 20rpx 20rpx 10rpx;
+  margin-left: 30rpx;
+  background-color: #fff;
+  color: #787878;
+  border-bottom: 1.5rpx solid #f2f2f2;
+  align-items: center;
+}
+
+.setion-middle {
+  flex:1; 
+  margin-left: 40rpx;
+  padding-top: 4rpx;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: middle;
+  font-size: 28rpx;
+  color: #353535;
+}
+
+.middle-up {
+  align-items: flex-end;
+  margin-bottom: 10rpx;
+}
+
+.middle-up .name {
+  font-size: 35rpx;
+  color: #353535;
+}
+
+.middle-up .tel {
+  font-size: 30rpx;
+  color: #353535;
+}
+
+.middle-down {
+  align-items: flex-end;
+}
+
+.middle-down .introduce {
+  font-size: 25rpx;
+  color: #353535;
+}

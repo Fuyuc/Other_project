@@ -1,0 +1,119 @@
+<view id='container'>
+  <image class='bgSearch' src='../../images/homePage/title.jpg'></image>
+  <image class='{{back}}' bindtap="clearInput" src='../../images/homePage/back.png'></image>
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+   <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>{{inputVal}}</view>
+        </view>
+      </navigator>
+    </view> 
+
+  <view class='{{show}}'>
+    <view class='yingyong'>
+
+      <navigator wx:for='{{actoionList}}' wx:key="*this" url='{{item.url}}'>
+        <view class='one'>
+          <image class='onePic' src='{{item.pic}}'></image>
+          <view class='picInfo'>{{item.title}}</view>
+        </view>
+      </navigator> 
+
+    </view>
+
+    <view class='tips'>
+      <view class='tips-txt'>文化产品</view>
+    </view> 
+    <image class='pro' src='../../images/homePage/pro.jpg'></image>
+
+    <view class='tips'>
+      <view class='tips-txt'>家族活动</view>
+    </view> 
+
+    <navigator wx:for="{{activityList}}" wx:key="*this" url='{{item.activityUrl}}'>
+      <view class='activityStyle2'>
+        <image class='activityPhoto' src='{{item.img}}' mode='widthFix'></image>
+        <view class='activityInfo'>
+            <view class='infoTop'>
+            <view class='topName'>{{item.name}}</view>
+          </view>
+          <view class='infoBottom'>{{item.info}}</view>
+        </view>
+      </view>
+    </navigator> 
+  </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class='Container'>
+  <swiper class="swiper" indicator-dots="true" circular='true' autoplay="true" interval="5000" duration="1000">   
+    <block wx:for="{{movies}}" wx:key="*this" wx:for-index="index">    
+      <swiper-item>    
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+      </swiper-item>    
+    </block>    
+  </swiper> 
+
+  <view class='doctor-tips'>
+    <view class='txt'>家族事务</view>
+    </view>  
+
+  <view class='styleDad'>
+    <navigator wx:for='{{actoionList}}' wx:key="*this" url='{{item.url}}'>
+      <view class='style'>
+        <image class="image" src='{{item.pic}}'></image>
+        <view class='iconsInfo'>{{item.title}}</view>
+      </view>
+    </navigator> 
+  </view>
+
+  <view class='doctor-tips'>
+    <view class='txt'>家族活动</view>
+  </view> 
+
+   <navigator wx:for="{{activityList}}" wx:key="*this" url='{{item.activityUrl}}'>
+    <view class='activityStyle'>
+      <image class='activityPhoto' src='{{item.img}}' mode='widthFix'></image>
+      <view class='activityInfo'>
+          <view class='infoTop'>
+          <view class='topName'>{{item.name}}</view>
+        </view>
+        <view class='infoBottom'>{{item.info}}</view>
+      </view>
+     </view>
+  </navigator> 
+
+</view>  -->

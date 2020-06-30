@@ -1,0 +1,9 @@
+<!--pages/mine/about/share.wxml-->
+<view class="container" style='padding:30rpx; background-color:white;'>
+  <text style='font-size: 45rpx; font-weight: 500;'>分享</text>
+
+  <view class="flex box">
+    <text style='font-size: 37rpx; font-weight: 300; padding-bottom:20rpx;'>请点击右上角按钮转发小程序</text>
+    <image src='/images/mine/arrow.svg' />
+  </view>
+</view>

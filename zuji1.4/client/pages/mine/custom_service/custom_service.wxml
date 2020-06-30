@@ -1,0 +1,2 @@
+<!--pages/mine/custom_service/custom_service.wxml-->
+<button bindtap='phonecallevent'>联系客服</button>

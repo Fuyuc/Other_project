@@ -1,0 +1,15 @@
+<!--page/mine/diary/diary.wxml-->
+<view class="container" style='background-color:white;'>
+  <view class="flex count_person" style='width'>我的家族当前总人数：{{person_num}}人</view>
+
+    <view class="flex operation">
+    <view class="definity_location">
+      <image class="photo" style='width: 30rpx; height: 30rpx; padding-right: 20rpx;' src="{{operation[0].url}}"></image>
+    </view>
+    <view class="name" style='padding-right: 10rpx;'>{{operator}}</view>
+    <view class="do" style='padding-right: 10rpx; color:{{operation[0].background}};'>{{operation[0].do}}</view>
+    <view class="name" style='padding-right: 10rpx;'></view>
+    <view class="local_time">{{date}}</view>
+  </view>
+
+</view>

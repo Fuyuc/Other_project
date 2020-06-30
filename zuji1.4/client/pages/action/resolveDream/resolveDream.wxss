@@ -1,0 +1,21 @@
+.flex{
+  display: flex;
+}
+
+.input_box{
+  background: #f2f2f2;
+  margin: 20rpx;
+}
+
+.input{
+  background: white;
+  padding: 10rpx;
+  width: 100%;
+}
+
+.icon{
+  background: white;
+  align-items: center;
+  padding-right: 10rpx;
+
+}

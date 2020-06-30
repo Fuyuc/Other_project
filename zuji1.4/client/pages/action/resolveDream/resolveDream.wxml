@@ -1,0 +1,20 @@
+<view class='container' style='background:white;'>
+  <image src='/images/homePage/zhougong.jpg' style='width:100%; height:25vh;' />
+  <view class='flex input_box'>
+    <input class="input" name="address" placeholder="搜索梦境" bindinput='value_input' />
+    <icon class='flex icon' type="search" size="25" bindtap='interpret'></icon>
+  </view>
+
+  <view style='padding:0rpx 10rpx 0rpx 10rpx;'>
+    <block wx:for-items="{{dataInfo}}" wx:key="unique">
+      <view class='function_text' style='padding-bottom:20rpx;'>
+        <view style='font-size: 37rpx; font-weight: 300; color:#ff4c41;padding-right:10rpx;'>{{item.title}}：</view>
+        <view style='font-size: 30rpx; font-weight: 300; color:#363636; line-height:50rpx;'>{{item.des}}</view>
+      </view>
+    </block>
+  </view>
+
+
+
+
+</view>

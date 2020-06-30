@@ -1,0 +1,33 @@
+/* pages/insertData/insertData.wxss */
+
+button{
+  margin: 30rpx;
+}
+
+.form-item {
+  padding: 10rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #A8A8A8;
+}
+
+.form-item-key {
+  padding: 10rpx;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-item-value {
+  padding: 10rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio {
+  margin-right: 20rpx;
+}
+
+.picker {
+  background-color: #fff;
+}

@@ -1,0 +1,48 @@
+<view class="container" style='background:#363636; height:100vh;'>
+  <view class='pingmu'>
+    <view class='title'>{{duixiang}}</view>
+    <view class='flex relation_result'>{{relation_result}}</view>
+    <view clas='flex relation_input'>{{inputText}}</view>
+  </view>
+  
+
+   <view class="flex body_view">
+    <view class="flex text">男</view>
+    <switch class='switch' bindchange="switch1Change" />
+    <view class="flex text">女</view>
+  </view> 
+
+  <view class='flex keyboard' style='width:100%'>
+    <view class="column">
+      <view class="flex block_button" data-text="父亲"  bindtap='getValue'>父</view>
+      <view class="flex block_button" data-text="哥哥"  bindtap='getValue'>兄</view>
+      <view class="flex block_button" data-text="弟弟"  bindtap='getValue'>弟</view>
+      <view class="flex block_button" data-text="儿子"  bindtap='getValue'>子</view>
+    </view>
+
+    <view class="column">
+      <view class="flex block_button" data-text="母亲"  bindtap='getValue'>母</view>
+      <view class="flex block_button" data-text="姐姐"  bindtap='getValue'>姐</view>
+      <view class="flex block_button" data-text="妹妹"  bindtap='getValue'>妹</view>
+      <view class="flex block_button" data-text="女儿"  bindtap='getValue'>女</view>
+    </view>
+
+    <view class="column">
+      <view class="flex block_button" bindtap='clearOnce'>←</view>
+      <view class="flex block_button" wx:if='{{sex == 0}}' data-text="丈夫"  bindtap='getValue'>夫</view>
+      <view class="flex block_button" wx:if='{{sex == 1}}' style='color:#808080;'>夫</view>
+      
+      <view class="flex block_button" wx:if='{{sex == 1}}' data-text="妻子"  bindtap='getValue'>妻</view> 
+      <view class="flex block_button" wx:if='{{sex == 0}}' style='color:#808080;'>妻</view>       
+      <view class="flex block_button" bindtap='changeDui'>≒</view>
+
+    </view>
+
+    <view class="column">
+      <view class="flex block_button" style='font-size:100rpx;' bindtap='clear'>◎</view>
+      <view class="flex count_button" style='font-size:100rpx;' bindtap='show'>=</view>
+    </view>
+
+  </view>
+
+</view>

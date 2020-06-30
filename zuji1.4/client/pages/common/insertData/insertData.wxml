@@ -1,0 +1,96 @@
+<!--pages/insertData/insertData.wxml-->
+
+<scroll-view scroll-y="true">
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="form-item">
+      <view class="form-item-key">姓</view>
+      <view class="form-item-value">
+        <input name='lastname' placeholder="请输入姓氏" />
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">名</view>
+      <view class="form-item-value">
+        <input name='firstname' placeholder="请输入名字" />
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">性别</view>
+      <view class="form-item-value">
+        <radio-group name='sex'>
+          <label class='radio'>
+            <radio value="男" />男
+          </label>
+          <label class='radio'>
+            <radio value="女" />女
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">是{{nowPerson}}的</view>
+      <view class="form-item-value">
+        <picker name='relation' bindchange="bindRelationChange" value="{{relationIndex}}" range="{{relationArray}}">
+          <view>{{relationArray[relationIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">排行</view>
+      <view class="form-item-value">
+        <picker name='rank' bindchange="bindRankChange" value="{{rankIndex}}" range="{{rankArray}}">
+          <view>{{rankArray[rankIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">标记</view>
+      <view class="form-item-value">
+        <input name='tab' placeholder="输入嗣子、过继、庠生等标记" />
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">生日</view>
+      <view class="form-item-value">
+        <picker name='birthday'  mode="date" value="{{date}}" start="1900-1-1" end="2018-12-31" bindchange="bindDateChange">
+          <view>{{date}}</view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">出生地</view>
+      <view class="form-item-value">
+        <input name='birthplace' placeholder="请输入出身地" />
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">x坐标</view>
+      <view class="form-item-value">
+        <input name='x' placeholder="请输入x" />
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="form-item-key">y坐标</view>
+      <view class="form-item-value">
+        <input name='y' placeholder="请输入y" />
+      </view>
+    </view>
+
+    <view>
+      <button type="primary" form-type='submit'>提交</button>
+      <button formType="reset">清空</button>
+    </view>
+
+  </form>
+
+</scroll-view>

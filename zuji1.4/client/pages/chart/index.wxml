@@ -1,0 +1,6 @@
+<!--pages/chart/index.wxml-->
+<movable-area class='tree-area' scale-area='true'>
+  <movable-view class='tree-view' direction='all' out-of-bounds='true' scale='true'>
+    <canvas canvas-id="myCanvas" class='canvas' bindtouchstart='touchStart' />
+  </movable-view>
+</movable-area>

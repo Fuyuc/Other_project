@@ -1,0 +1,80 @@
+{
+  "pages": [
+    
+    "pages/action/action",
+    "pages/action/findRoot/findRoot",
+    "pages/action/findRoot/result/result",    
+    "pages/action/picFind/picFind",
+    "pages/action/picFind/image_more/image_more",
+    "pages/action/picFind/text_more/text_more",
+    "pages/action/picFind/text_more1/text_more1",
+
+
+    "pages/action/resolveDream/resolveDream",
+    "pages/action/huangli/huangli",
+    "pages/action/relation/relation",
+    
+    "pages/action/myFamily/myFamily",
+    "pages/action/nearbyAct/nearbyAct",
+    "pages/action/nearbyAct/familyAct/chen/chen",
+    "pages/action/nearbyAct/familyAct/li/li",
+    "pages/action/nearbyAct/familyAct/sun/sun",
+    
+    "pages/activity/activity",
+    "pages/template/template",
+
+    "pages/chart/index",
+    "pages/chart/personInfo/personInfo",
+    "pages/common/insertData/insertData",
+    "pages/common/selectData/selectData",
+    "pages/common/updateData/updateData",
+    "pages/family/index",
+
+    "pages/mine/index",
+    "pages/mine/introduce/introduce",
+    "pages/mine/introduce/deed/deed",
+    "pages/mine/introduce/mod_deed/mod_deed",
+    "pages/mine/permission/permisson",
+    "pages/mine/diary/diary",
+    "pages/mine/group/group",
+    "pages/mine/print/print",
+    "pages/mine/about/about",
+    "pages/mine/about/function/function",
+    "pages/mine/about/question/question",
+    "pages/mine/about/contact/contact",
+    "pages/mine/about/advice/advice",
+    "pages/mine/about/share/share",
+    "pages/mine/custom_service/custom_service"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "族迹",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#e1734d",
+    "list": [
+      {
+        "pagePath": "pages/action/action",
+        "iconPath": "images/tab/family1.png",
+        "selectedIconPath": "images/tab/family2.png",
+        "text": "家族"
+      },
+      {
+        "pagePath": "pages/chart/index",
+        "iconPath": "images/tab/tree1.png",
+        "selectedIconPath": "images/tab/tree2.png",
+        "text": "树谱"
+      },
+      
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "images/tab/mine1.png",
+        "selectedIconPath": "images/tab/mine2.png",
+        "text": "我"
+      }
+    ]
+  }
+}

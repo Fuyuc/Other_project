@@ -1,0 +1,119 @@
+<!--common/intorduce/introduce.wxml-->
+<view class="container" style="background-color:white;">
+  <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <!--绝对定位两个图片-->
+    <view class="definity_location">
+      <image class="image_title" src="/images/deed/background.jpg"></image>
+      <image class="photo" src="/images/deed/title_image.svg"></image>
+    </view>
+    <!--个人信息（四行）-->
+    <view class="section">
+      <view class="flex frist_line">
+        <view class="key">出生于(年/月/日)：</view>
+        <view class="value">{{birthday}}</view>
+      </view>
+
+      <view class="flex line">
+        <view class="flex line_left">
+          <view>
+            <image class="icon" style='width: 50rpx; height:50rpx; padding-left: 20rpx;' src="/images/deed/relation.svg"></image>
+          </view>
+          <view class="key">关系</view>
+          <view class="value">{{relation}}</view>
+        </view>
+        <view class="flex line_right">
+          <view>
+            <image class="icon" style='width: 50rpx; height:50rpx; padding-left: 20rpx;' src="/images/deed/rank.svg"></image>
+          </view>
+          <view class="key">排行</view>
+          <view class="value">{{ranking}}</view>
+        </view>
+      </view>
+
+      <view class="flex line">
+        <view class="flex line_left">
+          <view>
+            <image class="icon" style='width: 50rpx; height:50rpx; padding-left: 20rpx;' src="/images/deed/tel.svg"></image>
+          </view>
+          <view class="key">电话</view>
+          <view class="value">{{telphone}}</view>
+        </view>
+        <view class="flex line_right">
+          <view>
+            <image class="icon" style='width: 50rpx; height:50rpx; padding-left: 20rpx;' src="/images/deed/label.svg"></image>
+          </view>
+          <view class="key">标记</view>
+          <view class="value">{{ranking}}</view>
+        </view>
+      </view>
+
+      <view class="flex line">
+        <view class="flex line_left">
+          <view>
+            <image class="icon" style='width: 50rpx; height:50rpx; padding-left: 20rpx;' src="/images/deed/intro.svg"></image>
+          </view>
+          <view class="key">简介</view>
+          <view class="value">{{brief_intro}}</view>
+        </view>
+
+      </view>
+    </view>
+
+    <!--添加个人事迹-->
+    <view class="time_axis">
+
+      <view wx:for="{{deed}}" wx:key='undefined' wx:for-index="idx" wx:if="{{deed[idx] != null && arr_time[idx] != null}}">
+        <!--单个事迹-->
+        <view class="flex section1">
+          <!--时间-->
+          <view class="times">
+            <view class="year">{{arr_time[idx][0]}}</view>
+            <view class="flex time">
+              <view class="day">{{arr_time[idx][1]}}</view>
+              <view class="month">{{arr_time[idx][2]}}月</view>
+            </view>
+          </view>
+
+          <!--事迹-->
+          <view class="deed">
+            <view class="flex top">
+              <!--标题-->
+              <view class="deed_title">{{deed[idx].title}}</view>
+              <!--编辑和删除按钮-->
+              <button id="{{id[idx]}}" class="button" bindtap='modify'>
+                <image class="modify" style="width: 40rpx; height: 40rpx;" src="/images/deed/edit.svg"></image>
+              </button>
+
+              <!--给每一个删除按钮定义一个id-->
+              <button id="{{id[idx]}}" class="button second" bindtap='delBind'>
+                <image class="modify" style="width: 40rpx; height: 40rpx;" src="/images/deed/delete.svg"></image>
+              </button>
+            </view>
+            <!--事迹信息-->
+            <view class="middle">
+              {{deed[idx].deed_body}}
+            </view>
+            <!--地址信息-->
+            <view class="flex down">
+              <image class="location_image" src="/images/deed/location.svg"></image>
+              <view class="location_info">{{deed[idx].address}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!--添加事迹按钮 由两张图片组成-->
+      <view class="flex insert_button">
+        <button class="insert_button" bindtap="insert">
+          <image class="insert" style="width: 65rpx; height: 65rpx;" src="/images/deed/add.svg"></image>
+        </button>
+
+        <button class="insert_button" bindtap="insert">
+          <image class="insert" style="width:500rpx; height: 75rpx; opacity:0.5;" src="/images/deed/dotted_box.png"></image>
+        </button>
+      </view>
+
+    </view>
+
+  </scroll-view>
+</view>

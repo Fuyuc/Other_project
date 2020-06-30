@@ -1,0 +1,22 @@
+<!--pages/mine/about/question.wxml-->
+<!--pages/mine/about/function.wxml-->
+<view class="container" style='padding:30rpx; background-color:white;'>
+  <text style='font-size: 45rpx; font-weight: 500;'>问题汇总</text>
+  <text decode="{{true}}" space="{{true}}" style='padding-top:10rpx;padding-bottom:40rpx;color:#8B8386; font-size: 30rpx;'>族迹&nbsp;&nbsp;2018-05-01</text>
+  <text style='font-size: 37rpx; font-weight: 300; padding-bottom:20rpx;'>本文汇总了用户在使用《族迹小程序》过程中的一些问题。希望对大家有所帮助。</text>
+
+  <view class='flex function_text' style='padding-bottom:20rpx;'>
+    <text style='font-size: 37rpx; font-weight: 300; color:#ff4c41'>●树谱展示不完全：</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>由于考虑到五代以外的家族成员对用户个人意义不大，也为了提高数据可视化程度，本程序设计的家谱树只能以用户为中心展示上/下三代家族成员信息。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx;'>
+    <text style='font-size: 37rpx; font-weight: 300; color:#ff4c41'>●人脸识别功能：</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>当用户需要上传照片进行人脸识别配对，就需要填写自己的个人信息，进入本程序的寻亲数据库，当数据库未能找到匹配度超过60的照片时，则不会返回任何照片。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx;'>
+    <text style='font-size: 37rpx; font-weight: 300; color:#ff4c41'>●族谱扫描：</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>S-OCR古籍扫描功能仅对开发者开发，且人工智能识别针对不同样式的族谱会因为训练程度的不同而导致识别率存在着不同的差异，有修谱需求的用户可以通过联系开发者进行使用。</text>
+  </view>
+</view>

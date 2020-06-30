@@ -1,0 +1,25 @@
+.Container{
+  width: 100vw;
+  background-color: white;
+  text-align: center;
+}
+.container{
+  width: 94%;
+  margin: 0 3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+  text-align: left;
+  background-color: white;
+}
+.title{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.time{
+  font-size: 26rpx;
+  font-weight: bold;
+}

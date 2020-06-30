@@ -1,0 +1,44 @@
+/* page/mine/about/about.wxss */
+.flex{
+  display: flex;
+}
+
+.logo{
+  justify-content: center;
+  background-color: #F8F8F8;
+  padding-top: 40rpx;
+  padding-bottom: 10rpx;
+}
+
+.brand{
+  font-size:60rpx;
+  font-weight:500;
+  justify-content:center;
+}
+.version{
+  justify-content: center;
+  color: #787878;
+  font-weight: 300;
+  padding-bottom: 20rpx;
+}
+
+.setion{
+  padding: 20rpx 20rpx 20rpx 0rpx;
+  background-color: #fff;
+  font-size: 34rpx;
+  font-weight: 300;
+  border-top: 0.8rpx solid #F2F2F2;
+  border-bottom: 0.8rpx solid #F2F2F2;
+  align-items: center;
+}
+
+.select_time_button{
+  position: fixed;
+  right: 20rpx;
+}
+
+.grey{
+  background-color: #F8F8F8;
+  height: 440rpx;
+  width: 100%;
+}

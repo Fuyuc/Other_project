@@ -1,0 +1,25 @@
+<view class="page">
+
+  <view class='{{Style}}'>
+    <view class='top'>
+      <!--Left-->
+      <view class='list-Photo'>{{person.name[0]}}</view>
+      <!--Right-->
+      <view class='list-Info'>
+        <view class='list-infoTop'>
+          <view class='list-topName'>{{person.name}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class='doctor-bgcolor-white'>
+      <view class='doctor-third'>
+        <view class='doctor-tips'>个人简介</view>
+        <view class='doctor-info'>{{person.summary}}</view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

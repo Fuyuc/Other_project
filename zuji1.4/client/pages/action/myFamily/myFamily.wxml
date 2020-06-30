@@ -1,0 +1,29 @@
+<view class='page'>
+  <view class='head'>
+    <view class='none'></view>
+    <view class='xing'>{{xing}}</view>
+    <view class='address'> 
+      <view class='addressInfo'>{{address}}</view>
+      <image class='addressPic' src='../../../images/address.png'/> 
+    </view>
+  </view>
+
+  <view class='title'>
+    <view class='titleName'>家族介绍</view>
+  </view>
+
+  <view class='introduce'>
+    <view class='introduceInfo'> {{introduceInfo}} </view>
+  </view>
+
+  <view class='title'>
+    <view class='titleName'>家族活动</view>
+  </view>
+
+  <view class='familyAct'>
+      <navigator class='actStyle'  wx:for="{{actList}}" wx:key="*this" url='{{item.url}}'> 
+        <image class='actPic' src='../../../images/dian.png'/>
+        <view class='actInfo'>{{item.info}}</view>
+      </navigator>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!--page/common/deed/deed.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+
+    <!--标题-->
+    <view class="flex title">标题</view>
+    <input class="input" name="title" maxlength="7" placeholder="输入标题" />
+
+    <!--时间选择器-->
+    <view class="flex title">时间</view>
+    <view class="flex section">
+      <picker class="picker" name="date" mode="date" value="{{date}}" start="2000-01-01" end="2020-12-31" bindchange="bindDateChange">
+        <view class="picker">{{date}}</view>
+      </picker>
+    </view>
+
+    <!--地点-->
+    <view class="flex title">地点</view>
+    <view class="flex section">
+      <input class="input" name="address" placeholder="点击输入地址" />
+      <button class="map_button">从地图选取</button>
+    </view>
+
+    <!--输入事迹-->
+    <view class="flex title">事迹详情</view>
+    <view class="border" style="height:100%;">
+      <textarea class="input" name="deed_body" style="height:6em" maxlength="-1" placeholder="点击输入事迹详情" />
+    </view>
+
+    <!--保存所有信息-->
+    <button style="width:670rpx; margin-bottom:40rpx;" type="primary" form-type='submit'>保存</button>
+  </form>
+</view>

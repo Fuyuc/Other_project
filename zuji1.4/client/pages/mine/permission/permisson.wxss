@@ -1,0 +1,25 @@
+/* page/mine/permission/permisson.wxss */
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: white;
+}
+
+.flex{
+  display:flex;
+}
+
+.title{
+  padding-left:20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+  background-color: #F8F8F8;
+}
+
+.person_image{
+  padding: 20rpx;
+}
+

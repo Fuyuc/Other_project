@@ -1,0 +1,45 @@
+<view class='P'>
+  <view class="section">
+    <!-- <view class="section__title">选择日期</view> -->
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+
+  </view>
+
+  <view class='style3'>
+    <view class='L3'>宜</view>
+    <view class='R3'>{{dataInfo.yi}}</view>
+  </view>
+  <view class='style2'>
+    <view class='L'>阴历</view>
+    <view class='R'>{{dataInfo.yinli}}</view>
+  </view>
+  <view class='style1'>
+    <view class='L'>百忌</view>
+    <view class='R'>{{dataInfo.baiji}}</view>
+  </view>
+  <view class='style2'>
+    <view class='L'>冲煞</view>
+    <view class='R'>{{dataInfo.chongsha}}</view>
+  </view>
+  <view class='style1'>
+    <view class='L'>忌</view>
+    <view class='R'>{{dataInfo.ji}}</view>
+  </view>
+  <view class='style2'>
+    <view class='L'>忌神</view>
+    <view class='R'>{{dataInfo.jishen}}</view>
+  </view>
+  <view class='style1'>
+    <view class='L'>五行</view>
+    <view class='R'>{{dataInfo.wuxing}}</view>
+  </view>
+  <view class='style2'>
+    <view class='L'>凶神</view>
+    <view class='R'>{{dataInfo.xiongshen}}</view>
+  </view>
+  
+</view>

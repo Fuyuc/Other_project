@@ -1,0 +1,47 @@
+<!--pages/mine/about/function.wxml-->
+<view class="container" style='padding:30rpx; background-color:white;'>
+  <text style='font-size: 45rpx; font-weight: 500;'>《族迹》小程序功能介绍</text>
+  <text decode="{{true}}" space="{{true}}" style='padding-top:10rpx;padding-bottom:40rpx;color:#8B8386; font-size: 30rpx;'>族迹&nbsp;&nbsp;2018-02-04</text>
+  <text style='font-size: 37rpx; font-weight: 500;'>【主要功能】</text>
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●家谱树展示。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>家谱树展示，每一个结点都能查看其父代和子代，大大增强了家谱数据的可视化效果。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●寻根。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>用户输入姓氏,查看数据库内所有相关姓氏的家族信息，可查阅并向已有管理员的家族发送加入请求</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●人脸识别</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>人脸识别，根据用户上传的照片从数据库筛选出相符合的人的信息返回给用户。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●附近活动。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>根据地图上的热点来观察附近哪些家族在举办活动。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●我的家族。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>用户查看自己的家族信息以及家族曾举办过的活动。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●关系换算。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>便捷式的换算亲戚关系，解决了用户对亲戚称谓复杂的困扰。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●黄历。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>黄历是一种能同时显示公历、农历和干支历等多套历法，并附加大量与趋吉避凶相关的规则和内容的历书。黄历主要内容为二十四节气的日期表，每天的吉凶宜忌、生肖运程等。即古代中国人民把每一天的喜忌都记在日历上，作行动指南。</text>
+  </view>
+
+  <view class='flex function_text' style='padding-bottom:20rpx; color:#ff4c41'>
+    <text style='font-size: 37rpx; font-weight: 500;'>●周公解梦。</text>
+    <text style='font-size: 30rpx; font-weight: 300; color:#363636;'>数据化显示《周公解梦》关于七类梦境的解述，用户可快速定位到自己想要的信息。</text>
+  </view>
+
+
+</view>

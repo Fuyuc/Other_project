@@ -1,0 +1,25 @@
+<!--page/mine/about/about.wxml-->
+<!--page/mine/mine.wxml-->
+
+<view class="container">
+  <!--生成其他功能-->
+  <view class="flex logo">
+    <image style="width: 170rpx; height: 230rpx;" src="/images/mine/logo.png"></image>
+  </view>
+  <view class= 'flex brand'>族迹</view>
+  <view class="flex version">v0.0.1</view>
+  <block wx:for-items="{{title_array}}" wx:key="{{item.id}}">
+    <view style="padding-left:30rpx; background-color:white;">
+      <navigator url="{{item.url}}" hover-class='navigator-hover'>
+        <view class="flex setion">
+          <view class="setion-left">{{item.name}}</view>
+
+          <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/mine/more.png"></image>
+
+        </view>
+      </navigator>
+    </view>
+  </block>
+
+  <view class="grey"></view>
+</view>

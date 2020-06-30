@@ -1,0 +1,9 @@
+<!--pages/mine/about/contact.wxml-->
+<view class="container" style='padding:30rpx; background-color:white;'>
+  <text style='font-size: 45rpx; font-weight: 500;'>联系开发者</text>
+  <text decode="{{true}}" space="{{true}}" style='padding-top:10rpx;padding-bottom:40rpx;color:#8B8386; font-size: 30rpx;'>族迹&nbsp;&nbsp;2017-07-23</text>
+  <text style='font-size: 37rpx; font-weight: 300; padding-bottom:20rpx;'>微信：chanxinwen</text>
+  <text style='font-size: 37rpx; font-weight: 300; padding-bottom:20rpx;'>QQ：274844335</text>
+  <text decode="{{true}}" space="{{true}}" style='font-size: 37rpx; font-weight: 300; padding-bottom:20rpx;'>地址：江西省南昌市紫阳大道99号江西师范大学瑶湖校区</text>
+
+</view>

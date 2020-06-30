@@ -1,0 +1,243 @@
+.Container{
+  width:100vw;
+  height:100vh;
+  background:#F2F2F2;
+}
+/* 轮播图 */
+.swiper {
+  height: 300rpx;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+/* 小标题 */
+.title{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #d3d3d3;
+  font-weight: bold;
+  font-size: 28rpx;
+  clear: both;    /*清除浮动影响*/
+}
+.doctor-tips{
+  clear: both;    /*清除浮动影响*/
+  background-color: white;
+  border-bottom: 5rpx solid #f2f2f2;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+  padding-top: 1vh;
+  height: 5vh;
+  color: black;
+}
+.txt{
+  width: 20vw;
+  height: 3vh;
+  padding-left: 20rpx;  
+  border-left: 15rpx #e1734d solid;
+}
+/* 功能选择  */
+.styleDad{
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 2vh;
+}
+.style{
+  float:left;
+  width:33.3vw;
+  height:14vh;
+  /* margin:0.5px; */
+  text-align: center;
+  background:white;
+  padding-top: 6vh;
+}
+.image{
+  width:11vw;
+  height:7vh;
+}
+.iconsInfo{
+  text-align: center;
+  font-size:14px;
+  height:7vh;
+  line-height:4vh;
+}
+/* 家族活动 */
+.activityStyle{
+  display: flex;
+  padding: 2vh 3vw;
+  width: 94vw;
+  height: 12vh;
+  background-color: white; 
+  border-top: #f2f2f2 1px solid;
+}
+.activityPhoto{
+  float: left;
+  width: 25%;
+  margin-left: 2vw;
+}
+.activityInfo{
+  float: left;
+  margin:1vh 4vw;
+  width: 75%;
+}
+.infoTop{
+  width: 100%;
+  height: 50%;
+  background-color: white; 
+}
+.topName{
+  float: left;
+}
+.infoBottom{
+  width: 100%;
+  height: 50%;
+  color: #9a9a9a;
+  font-size: 24rpx;
+   /*单行文本溢出隐藏*/
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* .Container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.style{
+  margin-top: 3vh;
+  width: 92%;
+  height: 21vh;
+}
+.stylePic{
+  width: 100%;
+  height: 21vh;
+  box-shadow: 5px 5px 5px #bfbfbf;
+  border-radius: 3%;
+} */
+.bgSearch{
+  width: 100%;
+  height: 12vh;
+  position: absolute;
+  top: -2vh;
+}
+.back1{
+  display: none;
+  position: absolute;
+  top: 2.5vh;
+  left: 5vw;
+  width: 5vw;
+  height: 3vh;
+}
+.back2{
+  display: block;
+  position: absolute;
+  top: 2.5vh;
+  left: 5vw;
+  width: 5vw;
+  height: 3vh;
+}
+.weui-search-bar__form{
+  width: 70vw;
+  height: 4vh;
+  margin-left: 15vw;
+  margin-top: 2vh;
+  background-color: #214653;
+  border: none;
+}
+.weui-cell{
+  margin-top: 5vh;
+}
+.weui-cell__bd{
+  width: 100%;
+  height: 100vh;
+}
+.show1{
+  display: block;
+}
+.show2{
+  display: none;
+}
+.showAdd{
+  color: gray;
+ font-size: 28rpx;
+}
+
+.weui-search-bar__cancel-btn{
+  padding-top: 0.5vh;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+#container{
+  width: 100%;
+  background-color: white;
+}
+.yingyong{
+  width: 80vw;
+  height: 20vh;
+  margin-left: 10vw;  
+  clear: both;
+  margin-top: 8vh;
+}
+.one{
+  float:left;
+  width:33%;
+  height: 10vh;
+  text-align: center;
+  background:white;
+  /* margin-left: 3%; */
+  padding: 1vh 0;
+}
+.onePic{
+  width:7vw;
+  height:5vh;
+}
+.picInfo{
+  text-align: center;
+  font-size:12px;
+  height:7vh;
+  line-height:3vh;
+}
+.tips{
+  clear: both; 
+  background-color: white;
+  border-top: 1vh solid #E4E4E4;
+  font-size: 26rpx;
+  padding-left: 10vw;
+  padding-top: 1vh;
+  height: 5vh;
+  color: black;
+}
+.tips-txt{
+  width: 20vw;
+  height: 4vh;
+  padding-left: 15rpx;  
+  font-size: 30rpx;
+  border-left: 13rpx #e1734d solid;
+}
+.pro{
+  margin-left: 10vw;
+  widows: 80vw;
+  height: 15vh;
+}
+.activityStyle2{
+  display: flex;
+  padding: 2vh 8vw;
+  width: 80vw;
+  height: 10vh;
+  background-color: white; 
+}

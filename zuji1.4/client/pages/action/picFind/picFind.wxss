@@ -1,0 +1,160 @@
+/* .showPic{
+  width: 100%;
+  height: 40vh;
+  background-color: #f2f2f2;
+}
+.pic{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  margin-top: 2vh;
+  width: 100%;
+  background-color: #77F477;
+  color: #fff;
+} */
+
+
+.flex {
+  display: flex;
+}
+
+.tips {
+  background-color: white;
+  border-top: 2vh solid #f2f2f2;
+  border-bottom: 2rpx solid #e4e4e4;
+  font-size: 26rpx;
+  padding-left: 15rpx;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: black;
+}
+
+.tips-txt {
+  flex: 1;
+  width: 20vw;
+  padding-left: 15rpx;
+  font-size: 30rpx;
+  align-items: center;
+  border-left: 13rpx #e1734d solid;
+}
+
+.count_page {
+  justify-content: flex-end;
+  font-size: 30rpx;
+  color: #fc5558;
+}
+
+.slide-image {
+  padding: 15rpx;
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.name_all {
+  flex: 1;
+}
+
+.name1 {
+  font-size: 26rpx;
+  color: #696969;
+  padding-bottom: 10rpx;
+  padding-left: 24rpx;
+}
+
+.more {
+  justify-content: center;
+  background-color: white;
+  color: #696969;
+  font-size: 24rpx;
+  padding: 40rpx 0rpx 10rpx 0rpx;
+  height: 3vh;
+  border-bottom: 1px solid gainsboro;
+}
+
+.default {
+  flex: 1;
+  line-height: 60rpx;
+  text-align: center;
+  border-right: 1px solid gainsboro;
+  color: #000;
+  font-weight: 500;
+  font-size: 28rpx;
+}
+
+.red {
+  line-height: 70rpx;
+  text-align: center;
+  color: #fc5558;
+  background: white;
+  flex: 1;
+  border-right: 1px solid gainsboro;
+  font-weight: 500;
+  font-size: 28rpx;
+}
+
+.show {
+  display: block;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+}
+
+.block {
+  background-color: white;
+  padding-left: 30rpx;
+  justify-content: flex-start;
+}
+
+.text_putting {
+  line-height: 70rpx;
+  color: #f00;
+  font-size: 24rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.image_box {
+  flex: 1;
+  padding: 20rpx;
+  /* box-shadow:0rpx 2rpx 6rpx 2rpx #F8F8F8 inset; */
+}
+
+.upload_button {
+  width: 40vw;
+  height: 73rpx;
+  border: 2rpx solid white;
+  border-radius: 0rpx;
+  background: black;
+  color: white;
+  font-size: 30rpx;
+}
+
+/* 用绝对定位为图片附加图层，需要修改 （feature/image）*/
+
+.feature {
+  position: relative;
+  top: -50rpx;
+  width: 23vw;
+  font-size: 26rpx;
+  color: white;
+  font-weight: 500;
+  background: black;
+  opacity: 0.7;
+  border: 2rpx solid black;
+}
+
+
+.image {
+  width: 23.5vw;
+  height: 17vh;
+  padding-top: 10rpx;
+  padding-right: 15rpx;
+}
+

@@ -1,0 +1,18 @@
+<!--page/mine/permission/permisson.wxml-->
+<view class="container">
+  <view class="title">发起人</view>
+  <view style='background-color:white' class="person_image">
+    <image style='height:80rpx; width:80rpx;' src="/images/mine/title_image.jpg"></image>
+  </view>
+
+  <view class="title">管理员</view>
+  <view style='background-color:white' class="flex grant_view">
+    <view class="person_image"><image style='height:80rpx; width:80rpx;' src="/images/mine/title_image.jpg"></image></view>
+  </view>
+
+  <view class="title">族员</view>
+  <view style='background-color:white' class="flex normal_view">
+    <view class="person_image"><image style='height:80rpx; width:80rpx;' src="/images/mine/title_image.jpg"></image></view>
+  </view>
+
+</view>

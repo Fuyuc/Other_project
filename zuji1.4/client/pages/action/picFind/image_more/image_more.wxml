@@ -1,0 +1,23 @@
+<block class='white' wx:for="{{person_list}}" wx:key='unique' wx:for-index="index">
+  <view class="flex setion">
+
+    <view class="setion-left">
+      <image style="width:85rpx; height: 85rpx;" src='{{item.src}}'></image>
+    </view>
+
+    <view class="setion-middle">
+      <view class="middle-up">
+        <view class="name">{{item.name}}</view>
+      </view>
+
+      <view class="middle-down">
+        <view class="introduce">
+          <text style='font-size:30rpx; color:#696969;'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+
+    <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/more.png"></image>
+  </view>
+
+</block>

@@ -1,0 +1,102 @@
+<!--page/mine/mine.wxml-->
+
+<view class="container">
+  <view class="partition">
+    <!--跳转到个人信息界面-->
+    <navigator url="/pages/mine/introduce/introduce" hover-class='navigator-hover'>
+      <view class="flex setion">
+        <!--头像-->
+        <view class="setion-left">
+          <image style="width:120rpx; height: 120rpx;"src='/images/mine/title_image.jpg'></image>
+        </view>
+
+        <!--姓名/电话/简介-->
+        <view class="setion-middle">
+          <view class="flex middle-up">
+            <view class="name">我</view>
+            <view class="tel" style='padding-left:15rpx; line-height:55rpx;'>xxx-xxxx-xxxx</view>
+          </view>
+
+          <view class="flex middle-down">
+            <image style="width: 30rpx; height: 30rpx;" mode="'scaleToFill'" src='/images/mine/signature.png'></image>
+            <view class="introduce">
+              <text>签名：</text>
+            </view>
+          </view>
+        </view>
+
+        <!--图标-->
+        <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/mine/more.png"></image>
+      </view>
+    </navigator>
+
+    <!--其他功能-->
+    <!--跳转到权限查看界面-->
+
+    <block wx:for-items="{{title_array_1}}" wx:key="{{item.id}}">
+      <navigator url="{{item.url}}" hover-class='navigator-hover'>
+        <view class="flex setion" style='border:none;'>
+          <view class="flex setion-left">
+            <image class="image" mode="'scaleToFill'" src="{{item.image_src}}"></image>
+          </view>
+
+          <view class="setion-middle">{{item.name}}</view>
+
+          <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/mine/more.png"></image>
+
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+  <!--分别跳转到日志/通讯录/打印界面-->
+  <view class="partition">
+    <block wx:for-items="{{title_array_2}}" wx:key="{{item.id}}">
+      <navigator url="{{item.url}}" hover-class='navigator-hover'>
+        <view class="flex setion">
+          <view class="flex setion-left">
+            <image class="image" mode="'scaleToFill'" src="{{item.image_src}}"></image>
+          </view>
+
+          <view class="setion-middle">{{item.name}}</view>
+
+          <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/mine/more.png"></image>
+
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+  <!--跳转到关于界面-->
+  <view class="partition">
+    <navigator url="{{title_array_3[0].url}}" hover-class='navigator-hover'>
+      <view class="flex setion">
+        <view class="flex setion-left">
+          <image class="image" mode="'scaleToFill'" src="{{title_array_3[0].image_src}}"></image>
+        </view>
+
+        <view class="setion-middle">{{title_array_3[0].name}}</view>
+
+        <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/mine/more.png"></image>
+      </view>
+    </navigator>
+
+    <!--联系客服按钮-->
+    <button class="button" style='width:100%' bindtap='phonecallevent'>
+
+      <view class="flex setion">
+        <view class="flex setion-left">
+          <image class="image" mode="'scaleToFill'" src="/images/mine/service.svg"></image>
+        </view>
+
+        <view class="setion_service">联系客服</view>
+
+        <view style='width: 60.5vw;'></view>
+
+        <image class="select_time_button" style="width: 40rpx; height: 40rpx;" src="/images/mine/more.png"></image>
+      </view>
+
+    </button>
+
+  </view>
+</view>
