@@ -1,0 +1,280 @@
+#:kivy 1.10
+# -*-coding:utf-8-*-
+
+<BoxLayout>:
+    padding: 5
+    spacing: 5
+
+<FloatLayout>:
+    padding: 5
+    spacing: 5
+
+<Label>:
+    font_size: 20
+    font_name: 'C:/Windows/Fonts/AdobeFangsongStd-Regular.otf'
+    color: (0,0,0,1)
+
+<Button>:
+    background_color: (0, 0, 0, 0) if self.state == 'normal' else (0, 0, 0, 0)
+    size_hint: (1, None)
+    height: 50
+    border: (2, 2, 2, 2)
+    halign: 'center'
+    markup: True
+
+<PopupButton>:
+    background_normal: 'images/button_normal.png'
+    background_down: 'images/button_down.png'
+    size_hint: (1, None)
+    height: 50
+    border: (2, 2, 2, 2)
+    halign: 'center'
+    markup: True
+
+<BodyButton@Button>:
+    font_size: 30
+    font_name: 'C:/Windows/Fonts/TCMI____.TTF'
+    size_hint: (1,None)
+    background_color: (0,0,0,0)
+    border: (2, 2, 2, 2)
+    halign: 'center'
+    markup: True
+
+<ReturnButton@Button>:
+    font_size: 30
+    text: "[font=modernpics.otf][size=30]<[/size][/font]"
+    background_color: (0,0,0,0)
+    border: (2, 2, 2, 2)
+    halign: 'center'
+    markup: True
+
+<TextInput>:
+    font_size: 20
+    multiline: False
+    padding: [10, 0.5 * (self.height - self.line_height)]
+
+<ScrollView>:
+    canvas.before:
+        Color:
+            rgb: 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<Screen>:
+    size: (640,960)
+
+ScreenManager:
+
+    Screen:
+        name: "login"
+
+        BoxLayout:
+            orientation: "vertical"
+
+            Label:
+                text: 'Online On-demand System'
+                font_name: 'C:/Windows/Fonts/StencilStd.otf'
+                font_size: 40
+                size_hint: (1,1/4)
+
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint: (1,1/6)
+                Label:
+                    text: "ID"
+                    size_hint: (1/6,1)
+                TextInput:
+                    id: user_id
+                    size_hint: (5/6,1)
+
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint: (1,1/6)
+                Label:
+                    text: "password"
+                    size_hint: (1/6,1)
+                TextInput:
+                    id: user_password
+                    size_hint: (5/6,1)
+
+            BoxLayout:
+                size_hint: (1,1/6)
+                orientation: "horizontal"
+
+                Button:
+                    text: "[font=modernpics.otf][size=30]g[/size][/font]\nUser log in"
+                    size_hint: (1/3,1)
+                    on_press: app.login_user()
+
+                Button:
+                    text: "[font=modernpics.otf][size=30]e[/size][/font]\nRegister"
+                    size_hint: (1/3,1)
+
+            Button:
+                size_hint: (1,1/6)
+                text: "[font=modernpics.otf][size=30])[/size][/font]   Sixth Group Design"
+
+
+    Screen:
+        name: "choose_camera_view"
+
+        BoxLayout:
+            orientation: "vertical"
+            BoxLayout:
+                size_hint: (1,1/9)
+                BodyButton:
+                    text:"[font=modernpics.otf][size=30]A[/size][/font]   Camera"
+                    background_color: (0,0,255,0.5)
+            BoxLayout:
+                size_hint: (1,1/9)
+                orientation: "horizontal"
+                ReturnButton:
+                    size_hint: (1/10,1)
+                    on_press: root.current = 'login'
+
+                Label:
+                    size_hint: (5/10,1)
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint:(4/10,1)
+
+                    Label:
+                        size_hint: (4/6,1)
+                        text:"Select Camera ID"
+
+                    TextInput:
+                        id: camera_list_id
+                        size_hint: (1/6,1)
+
+                    BodyButton:
+                        size_hint: (1/6,1)
+                        background_color: (0,0,0,0)
+                        text: "[font=modernpics.otf][size=30]s[/size][/font]"
+                        on_press: app.search_file_button()
+
+            ScrollView:
+                pos_hint: {'bottom':1}
+                do_scroll_y: True
+                BoxLayout:
+                    size_hint: (1,8/9)
+                    orientation: "vertical"
+
+                    Label:
+                        size_hint:(1,1/20)
+                        font_name: 'C:/Windows/Fonts/TCMI____.TTF'
+                        font_size: 15
+                        text: '      Camera Id                                             Camera Name                                             Last Use Name     '
+
+                    Label:
+                        size_hint: (1,1/20)
+
+                    ScrollView:
+                        do_scroll_y: True
+                        StackLayout:
+                            id: camera_list
+                            size_hint_y: None
+                            height: self.minimum_height
+
+
+
+    Screen:
+        name: "choose_file_view"
+
+        BoxLayout:
+            orientation: "vertical"
+            BoxLayout:
+                size_hint: (1,1/9)
+                BodyButton:
+                    text:"[font=modernpics.otf][size=30]a[/size][/font]   File"
+                    background_color: (0,0,255,0.5)
+
+            BoxLayout:
+                size_hint: (1,1/10)
+                orientation: "horizontal"
+
+                ReturnButton:
+                    size_hint: (1/10,1)
+                    on_press: root.current = 'choose_camera_view'
+
+                Label:
+                    size_hint: (5/10,1)
+
+                BoxLayout:
+                    orientation: "horizontal"
+                    size_hint:(4/10,1)
+
+                    Label:
+                        size_hint: (4/6,1)
+                        text:"Select File"
+
+                    TextInput:
+                        id: file_list_id
+                        size_hint: (1/6,1)
+
+                    BodyButton:
+                        size_hint: (1/6,1)
+                        text: "[font=modernpics.otf][size=30]s[/size][/font]"
+                        on_press: app.search_video_button()
+
+            ScrollView:
+                pos_hint: {'bottom':1}
+                do_scroll_y: True
+                BoxLayout:
+                    size_hint: (1,5/7)
+                    orientation: "vertical"
+
+                    Label:
+                        size_hint:(1,1/20)
+                        font_name: 'C:/Windows/Fonts/TCMI____.TTF'
+                        font_size: 15
+                        text: '      File ID                                             File Name                                             Shooting Time     '
+
+                    Label:
+                        size_hint: (1,1/20)
+
+                    ScrollView:
+                        do_scroll_y: True
+                        StackLayout:
+                            id: file_list
+                            size_hint_y: None
+                            height: self.minimum_height
+
+            BoxLayout:
+                size_hint:(1,1/7)
+                orientation: "horizontal"
+                background_color: (0,0,255,0.5)
+
+                Label:
+                    size_hint: (6/10,1)
+
+                BodyButton:
+                    size_hint: (4/10,1)
+                    text: "Real Time Viewing   [font=modernpics.otf][size=30]H[/size][/font]"
+                    on_press: root.current = "video_view"
+
+    Screen:
+        name : 'video_view'
+
+        BoxLayout:
+            orientation:"vertical"
+            BoxLayout:
+                size_hint: (1,1/9)
+                BodyButton:
+                    text:"[font=modernpics.otf][size=30]P[/size][/font]   Video"
+                    background_color: (0,0,255,0.5)
+            BoxLayout:
+                size_hint: (1,1/10)
+                orientation: "horizontal"
+                ReturnButton:
+                    size_hint: (1/10,1)
+                    on_press: app.view_player_back_button()
+
+                Label:
+                    size_hint: (9/10,1)
+
+            BoxLayout:
+                size_hint: (1,8/9)
+                id: video

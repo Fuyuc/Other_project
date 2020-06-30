@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../book management system/.idea/book management system.iml" filepath="$PROJECT_DIR$/../book management system/.idea/book management system.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/console/.idea/console.iml" filepath="$USER_HOME$/Desktop/console/.idea/console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/video.iml" filepath="$PROJECT_DIR$/.idea/video.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/videoapp/.idea/videoapp.iml" filepath="$USER_HOME$/Desktop/videoapp/.idea/videoapp.iml" />
+    </modules>
+  </component>
+</project>
